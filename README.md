@@ -6,6 +6,10 @@ Two very simple strategies for now:
 - Fuzzy match using the rapidfuzz library (https://github.com/maxbachmann/rapidfuzz)
 
 -In code, there is a third strategy using a w2v matrix for soft cosine indexing, but is not operative
+
+
+- [convertSnomed2tsv.py] Genera los diccionarios de Snomed y CIE-10 desde archivos de la distribución en Espñol de esos recursos
+
 ## Usage
 
 python TEMUnormalizer.py -h
