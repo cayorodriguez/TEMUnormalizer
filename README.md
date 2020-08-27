@@ -1,5 +1,6 @@
 # TEMUnormalizer
 
+## Description
 Baseline term normalizer to find Snomed and CIE-10 codes
 Two very simple strategies for now:
 - Direct Match from dictionary
@@ -39,7 +40,10 @@ Options:
                         normalize. Otherwise, will try to normalize everything
  
  </pre> 
+ ## Example
+ 
  <pre> 
+
 e.g.: python TEMUnormalizer.py -d./tsv_dictionaries/SpanishSnomed.tsv 
   -f  normalized_list_snomed_from_ann.tsv 
   -t S0004-06142005000200004-1.ann 
@@ -63,6 +67,7 @@ number of terms missing after fuzzy match:  77
 26.10169491525424  % NOT found
  Overall processing in  0.9886657079060872  minutes
  </pre>
+ ## Tests
 <pre> 
  python tests.py 
 295  test results entries
