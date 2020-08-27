@@ -22,7 +22,7 @@ from rapidfuzz import process#, utils
 #import nltk
 from nltk.tokenize import word_tokenize
 #For TEST
-os.chdir("/home/crodri/GIT/TEMUNorm/")
+#os.chdir("/home/crodri/GIT/TEMUNorm/")
 #filepath = "./tsv_dictionaries/SpanishSnomed.tsv"
 
 
@@ -190,7 +190,7 @@ from optparse import OptionParser
 def main(argv=None):
     parser = OptionParser()
     parser.add_option("-d", "--dictionary", dest="reference_dict",
-                    help="tab-separated (term to code) file to create reference dictionary from",default="./tsv_dictionaries/SpanishSnomed.tsv")
+                    help="tab-separated (term to code) file to create reference dictionary from",default="SpanishSnomed.tsv")
     parser.add_option("-f", "--fileout", dest="fileout", help="output file, tab-separated values extension (.tsv)",default="termlist_normalized.tsv")
   
     parser.add_option("-t", "--terms", dest="termlist", help="file with term list to normalize, one per line")
